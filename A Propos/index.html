@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/stylePrincipale.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <title>A Propos</title>
+</head>
+<body>
+    <header id="Header--Section">
+        <button id="theme" onclick="changerLeTheme()">Changer le fond</button>
+        <nav id="Header--Nav">
+            <ul id="Menu--Ul">
+                <li class="Menu--Li">
+                    <a href="../Page d'Accueil/index.html" class="Menu--P">
+                        Accueil
+                    </a>
+                </li>
+                <li class="Menu--Li">
+                    <a href="../A Propos/index.html" class="Menu--P">
+                        A Propos
+                    </a>
+                </li>
+                <li class="Menu--Li">
+                    <a href="../Nos Cartes/index.html" class="Menu--P">
+                        Nos Cartes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="../Formulaire/index.html" id="carte--A">Recevoir une carte</a>
+    </header>
+
+    <header id="Header--Place"></header>
+
+    <div id="Fond--Div" >
+        <ul id="Fond--Ul">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    
+    <section id="Infos--Section">
+        <div id="Infos--Div">
+            <div id="Gauche--Div">
+                <h1 id="Gauche--H1">A Propos</h1>
+                <div id="Droite--Div">
+                    <ul id="Droite--Ul">
+                        <li onclick="sedeplacer(this)" class="Droite--Li">
+                            <a class="Droite--A">Qui sommes-nous ?</a>
+                        </li>
+                        <li onclick="sedeplacer(this)" class="Droite--Li">
+                            <a class="Droite--A" >A quel sujet ?</a>
+                        </li>
+                        <li onclick="sedeplacer(this)" class="Droite--Li">
+                            <a class="Droite--A" >Où trouvons nous nos données ?</a>
+                        </li>
+                        <li onclick="sedeplacer(this)" class="Droite--Li">
+                            <a class="Droite--A" >Notre procédé</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="Gauche--Ul">
+                    <li class="Gauche--Li">
+                        <div class="Gauche--Li--Div">
+                            <h3 class="Gauche--H3">Qui sommes-nous ?</h3>
+                            <p class="Gauche--P">Qui sommes-nous ? Bonne question, nous sommes une association luttant contre les accidents de la route en tous genres mais notamment contre ceux liés aux excès de vitesse. Nous publions alors notre site pour prévenir les conducteurs.</p>
+                        </div>
+                    </li>
+                    <li class="Gauche--Li">
+                        <div class="Gauche--Li--Div">
+                            <h3 class="Gauche--H3">A quel sujet ?</h3>
+                            <p class="Gauche--P">Ce site a pour thème les excès de vitesse, vous y retrouverez quelques informations interéssantes à propos des flashs relevés par les voitures radars à conduite externalisée en France qui couvrent aujourd'hui 8 régions : <ul> <li> La Normandie </li> <li> La Bretagne </li> <li> Le Pays-de-la-Loire </li> <li> Le  Centre-Val de Loire </li> <li> La Nouvelle-Aquitaine </li> <li> La Bourgogne-Franche-Comté </li> <li> Le Grand-Est </li> <li>Les Hauts de France. </li></ul></p>
+                        </div>
+                    </li>
+                    <li class="Gauche--Li">
+                        <div class="Gauche--Li--Div">
+                            <h3 class="Gauche--H3">Où trouvons nous nos données ?</h3>
+                            <p class="Gauche--P">Afin de réaliser ce site nous sommes allés collecter des données sur le site de l'Etat "Data.gouv.fr", nous les avons récuperer au format CSV puis nous les avons traités. Pour ce site nous avons utilisé 1 fichier trouvable sur le site "Data.gouv.fr" se nommant "Jeu de données des vitesses relevées par les voitures radars à conduite externalisée".</p>
+                        </div>
+                    </li>
+                    <li class="Gauche--Li" id="Derniere--Gauche--Li">
+                        <div class="Gauche--Li--Div">
+                            <h3 class="Gauche--H3">Notre procédé</h3>
+                            <p class="Gauche--P"> Pour traiter les données présentes sur le site nous avons du tout d'abord rendre les fichiers csv manipulables en python, puis afin de les traiter nous avons utilisé deux méthodes différentes :
+                                <br>
+                                <br> La première : <br>
+                                <br>
+                                C'est un simple traitement des données csv avec des boucles for pour parcourir les données et pouvoir les manipuler, on va par exemple réunir les excès entre eux puis faire des moyennes, trouver le plus grand excès, etc. Les résultats de ces types de traitements de données sont affichés sur la page d'accueil. 
+                                <br>
+                                <br> La deuxieme : <br>
+                                <br>
+                                La deuxième méthode est plus complexe, elle consiste à récuperer tous les excès par régions, c'est à dire que nous souhaitons un dictionnaire avec en clés les noms des régions et en valeurs une liste de tuples représentant chacun 1 excès et avec dans chacun de ces tuples les coordonnées et si c'est un booléens pour savoir si c'est un excès ou pas.
+                                <br>
+                                Ce tri était compliqué car les régions n'était pas directement affiché, on avait seulement les coordonnées.
+                                <br>
+                                Finalement on place chaque point dans la carte de sa région, et si son booléen est true on affiche le point en rouge.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

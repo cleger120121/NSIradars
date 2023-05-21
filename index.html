@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylePrincipale.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Page d'Accueil</title>
+</head>
+<body>
+    <header id="Header--Section">
+        <button id="theme" onclick="changerLeTheme()">Changer le fond</button>
+        <nav id="Header--Nav">
+            <ul id="Menu--Ul">
+                <li class="Menu--Li">
+                    <a href="./index.html" class="Menu--P">
+                        Accueil
+                    </a>
+                </li>
+                <li class="Menu--Li">
+                    <a href="./A Propos/index.html" class="Menu--P">
+                        A Propos
+                    </a>
+                </li>
+                <li class="Menu--Li">
+                    <a href="./Nos Cartes/index.html" class="Menu--P">
+                        Nos Cartes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="./Formulaire/index.html" id="carte--A">Recevoir une carte</a>
+    </header>
+
+    <section id="Header--Place"></section>
+
+    <div id="Fond--Div" >
+        <ul id="Fond--Ul">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+
+    <section id="Cartes--Section">
+        <div id="Cartes--Div--H1">
+            <h1 id="Cartes--H1">Sécurité Routière : analyse des vitesses enregistrées</h1>
+        </div>
+        <div id="Cartes--Div">
+            <div class="Cartes--Div2-1">
+                <div class="Cartes Cartes-1">
+                    <div class="Carte--Commentaire">
+                        <h1 class="Carte--H1">  Une moyenne de 8km/h d'excès </h1>
+                        <p class="Carte--P"> En moyenne, les excès flashés sont de 8 km/h. Pour obtenir ce résultat, nous avons traité les données CSV en analysant les dépassements de vitesse moyens des conducteurs en excès. Nous avons regroupé tous les excès, additionné les vitesses de dépassement, puis divisé cette somme par le nombre d'excès.</p>
+                    </div>
+                     <p class="Carte--I">🚦</p>
+                </div>
+            </div>
+            <div class="Cartes--Div2-2">
+                <div class="Cartes Cartes-2">
+                    <div class="Carte--Commentaire--2">
+                        <h1 class="Carte--H1--2"> +139km/h ! </h1>
+                        <p class="Carte--I--2">⚡</p>
+                    </div>
+                    <p class="Carte--P--2">Un conducteur a été flashé à une vitesse supérieure à la limite de vitesse de plus de 139 km/h. Pour retrouver cette valeur, nous avons simplement regroupé tous les excès de vitesse dans une liste, ensuite nous avons cherché l'excès de vitesse maximum dans cette liste. La valeur maximale des excès de vitesse nous donne donc l'excès le plus important.</p>
+                </div>
+                <div class="Cartes Cartes-2">
+                    <div class="Carte--Commentaire--2">
+                        <h1 class="Carte--H1--2"> -110km/h ?</h1>
+                        <p class="Carte--I--2">🐌</p>
+                    </div>
+                    <p class="Carte--P--2">Un conducteur a été flashé à une vitesse inférieure à la limite de vitesse de plus de 110 km/h. Pour retrouver cette valeur, nous avons regroupé les différents flashs dans une liste, puis analysé la différence entre la limite autorisée et la vitesse flashée, nous avons par la suite trouvé la valeur minimale de cette liste. Cette valeur minimale correspond donc à la vitesse la plus en dessous de la limite autorisée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

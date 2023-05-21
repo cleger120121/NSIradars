@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/stylePrincipale.css">
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="Fond--Div" >
+        <ul id="Fond--Ul">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div>
+    <div id="form--Div">
+            <div class="questionnaire--Div">
+                <h1 class="titre--quizz">Sécurité Routière : Quizz</h1>
+
+                <div class="question">
+                    <h3 class="titre--Question">Quelles sont les vitesses maximales autorisées en agglomération?</h3>
+                    <input type="checkbox" name="q1" value="30"> 30 km/h
+                    <br>
+                    <input type="checkbox" name="q1" value="50"> 50 km/h
+                    <br>
+                    <input type="checkbox" name="q1" value="70"> 70 km/h
+                    <br>
+                    <input type="checkbox" name="q1" value="90"> 90 km/h
+                    <br>
+                </div>  
+                <div class="question"> 
+                    <h3 class="titre--Question">Quelle est la distance de sécurité recommandée entre deux véhicules lorsque vous roulez à 50km/h?</h3>
+                    <input type="radio" name="q2" value="1"> 1 mètre
+                    <br>
+                    <input type="radio" name="q2" value="5"> 5 mètres
+                    <br>
+                    <input type="radio" name="q2" value="10"> 10 mètres
+                    <br>
+                    <input type="radio" name="q2" value="30"> 30 mètres
+                    <br>
+                </div>
+                <div class="question">  
+                    <h3 class="titre--Question">Quel est le taux d'alcool limite autorisé par litre de sang au volant ?</h3>
+                    <input type="radio" name="q3" value="0.1"> 0.1g/L
+                    <br>
+                    <input type="radio" name="q3" value="0.5"> 0.5g/L
+                    <br>
+                    <input type="radio" name="q3" value="2"> 2g/L
+                </div>
+                <button onclick="validerQCM()">Valider</button>
+            </div>
+
+        <form action="./serveur.php" method="post">
+            <div class="questionnaire--Div" id="q1">
+                <h1 class="titre--quizz">Vos coordonnées</h1>
+                <input type="text" name="prenom" placeholder="Prénom">
+    
+                <input type="text" name="nom" placeholder="Nom">
+        
+                <select name="region">
+                    <option value="---">---</option>
+                    <option value="Normandie">Normandie</option>
+                    <option value="Bretagne">Bretagne</option>
+                    <option value="Pays-de-la-Loire">Pays-de-la-Loire</option>
+                    <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+                    <option value="Nouvelle Aquitaine">Nouvelle Aquitaine</option>
+                    <option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+                    <option value="Grand-Est">Grand-Est</option>
+                    <option value="hauts-de-france">Hauts-de-France</option>
+                </select> 
+        
+                <input type="text" name="email" placeholder="E-mail">
+                              
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
